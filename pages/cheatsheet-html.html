@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Mise en forme : CSS</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#initialize">Base de fichier HTML</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#structure">Structure de page</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#plan">Plan</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#neutral">Balises neutres</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#sub-sup">Indice, exposant</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#list">Liste</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#table">Tableau</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#links">Liens</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#media">Médias</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#online">Aide en ligne</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="initialize">
+            <h2>Base de fichier HTML</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <pre class="html"><code>&lt;!doctype html&gt;                  <span class="comment">&lt;-- reconnaissance du code HTML5 par le navigateur --&gt;</span>
+&lt;html lang="fr"&gt;                 <span class="comment">&lt;-- langue du contenu de la page --&gt;</span>
+    &lt;head&gt;                       <span class="comment">&lt;-- en-tête de la page (paramétrage) --&gt;</span>
+        &lt;meta charset="utf-8"&gt;   <span class="comment">&lt;-- affichage correct de certains caractères --&gt;</span>
+        &lt;link rel="stylesheet"&gt;  <span class="comment">&lt;-- lien vers un fichier CSS --&gt;</span>
+        &lt;title&gt;...&lt;/title&gt;       <span class="comment">&lt;-- titre de l’onglet --&gt;</span>
+    &lt;/head&gt;
+    &lt;body&gt;                       <span class="comment">&lt;-- contenu de la page --&gt;</span>
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="structure">
+            <h2>Structure de page</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>en-tête (page, section)</td>
+                            <td>
+                                <pre class="html"><code>&lt;header&gt;&lt;/header&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>menu de navigation</td>
+                            <td>
+                                <pre class="html"><code>&lt;nav&gt;&lt;/nav&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>contenu principal</td>
+                            <td>
+                                <pre class="html"><code>&lt;main&gt;&lt;/main&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>section</td>
+                            <td>
+                                <pre class="html"><code>&lt;section&gt;&lt;/section&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>article</td>
+                            <td>
+                                <pre class="html"><code>&lt;article&gt;&lt;/article&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>contenu secondaire</td>
+                            <td>
+                                <pre class="html"><code>&lt;aside&gt;&lt;/aside&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>pied (page, section)</td>
+                            <td>
+                                <pre class="html"><code>&lt;footer&gt;&lt;/footer&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="plan">
+            <h2>Plan</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>titres (niveaux hiérarchiques)</td>
+                            <td>
+                                <pre class="html"><code>&lt;h1&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;/h6&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>paragraphe</td>
+                            <td>
+                                <pre class="html"><code>&lt;p&gt;&lt;/p&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>retour à la ligne</td>
+                            <td>
+                                <pre class="html"><code>&lt;br&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="neutral">
+            <h2>Balises neutres</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>bloc</td>
+                            <td>
+                                <pre class="html"><code>&lt;div&gt;&lt;/div&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>inline</td>
+                            <td>
+                                <pre class="html"><code>&lt;span&gt;&lt;/span&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="sub-sup">
+            <h2>Indice, exposant</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>exposant</td>
+                            <td>
+                                <pre class="html"><code>&lt;sup&gt;&lt;/sup&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>indice</td>
+                            <td>
+                                <pre class="html"><code>&lt;sub&gt;&lt;/sub&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="list">
+            <h2>Liste</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>liste à puces</td>
+                            <td>
+                                <pre class="html"><code>&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>liste numérotée</td>
+                            <td>
+                                <pre class="html"><code>&lt;ol&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="table">
+            <h2>Tableau</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>tableau</td>
+                            <td>
+                                <pre class="html"><code>&lt;table&gt;&lt;/table&gt; </code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ligne</td>
+                            <td>
+                                <pre class="html"><code>&lt;tr&gt;&lt;/tr&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>titre</td>
+                            <td>
+                                <pre class="html"><code>&lt;th&gt;&lt;/th&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>case</td>
+                            <td>
+                                <pre class="html"><code>&lt;td&gt;&lt;/td&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="links">
+            <h2>Liens</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>page interne</td>
+                            <td>
+                                <pre class="html"><code>&lt;a href="./css.html"&gt;Langage CSS&lt;/a&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>page externe</td>
+                            <td>
+                                <pre class="html"><code>&lt;a href="https://www.touraine-eschool.fr/"&gt;Mon ENT&lt;/a&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>nouvel onglet</td>
+                            <td>
+                                <pre class="html"><code>&lt;a href="https://fr.wikipedia.org/" target="_blank"&gt;Wikipedia&lt;/a&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>adresse mail</td>
+                            <td>
+                                <pre class="html"><code>&lt;a href="mailto:adresse@truc.fr"&gt;M'écrire&lt;/a&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>téléphone</td>
+                            <td>
+                                <pre class="html"><code>&lt;a href="tel:+33600000000"&gt;06 00 00 00 00&lt;/a&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="media">
+            <h2>Médias</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table class="cheatsheet">
+                        <tr>
+                            <td>image</td>
+                            <td>
+                                <pre class="html"><code>&lt;img src="./photo.jpg" alt="Description"&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>audio</td>
+                            <td>
+                                <pre class="html"><code>&lt;audio controls src="./fichier.mp3"&gt;&lt;/audio&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>vidéo</td>
+                            <td>
+                                <pre class="html"><code>&lt;video controls&gt;
+    &lt;source src="./fichier.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="online">
+            <h2>Aide en ligne</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Lien vers la <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Fondation Mozilla</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

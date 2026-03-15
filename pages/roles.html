@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>HTML et CSS : rôles</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#html">HTML : structurer le contenu d'une page</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#css">CSS : mettre en forme le contenu d'une page</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#skeleton">Le squelette minimal d'un fichier HTML</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="html">
+            <h2>HTML : structurer le contenu d'une page</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        HTML sert à donner du sens au contenu (titre, texte, liste, image…). On repère des balises
+                        ouvrantes et des balises fermantes. Ce n’est pas un langage de programmation, c’est un langage
+                        de balisage.
+                    </p>
+                    <pre class="html"><code>&lt;h1&gt;Mon Titre&lt;/h1&gt;
+&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    <img src="../assets/roles/html.png" alt="Le résultat du code précédent">
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/roles/html.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="css">
+            <h2>CSS : mettre en forme le contenu d'une page</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        CSS modifie l’apparence des éléments HTML. Ce n’est pas un langage de programmation. Appliquons
+                        ces styles au HTML ci-dessus :
+                    </p>
+                    <pre class="css"><code>h1 {
+  font-size:  16px;
+}
+
+p {
+  color: blue;
+}</code></pre>
+                    <img src="../assets/roles/css.png" alt="Le résultat du code précédent">
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/roles/css.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="skeleton">
+            <h2>Le squelette minimal d'un fichier HTML</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Ce squelette est indispensable pour que la page soit comprise par le navigateur. Attention
+                        aux indentations, très utiles pour relire son propre code... Chaque balise a un rôle précis.
+                        Elles sont imbriquées les unes dans les autres, mais jamais croisées.
+                    </p>
+                    <pre class="html"><code>&lt;!doctype html&gt;  <span>&lt;!-- ce document est codé en HTML5 --&gt;</span>
+&lt;html lang="fr"&gt;  <span>&lt;!-- la page ; son contenu est en français --&gt;</span>
+    &lt;head&gt;  <span>&lt;!-- l’en-tête de la page (paramétrage) --&gt;</span>
+        &lt;meta charset="utf-8"&gt;  <span>&lt;!-- données liées aux caractères affichés --&gt;</span>
+        &lt;title&gt;Titre de l’onglet&lt;/title&gt;  <span>&lt;!-- le titre de l’onglet dans le navigateur --&gt;</span>
+    &lt;/head&gt;  <span>&lt;!-- fermeture de l’en-tête --&gt;</span>
+
+    &lt;body&gt;  <span>&lt;!-- le corps de la page (ce qui s’affiche) --&gt;</span>
+        &lt;p&gt;Texte visible&lt;/p&gt;  <span>&lt;!-- un paragraphe --&gt;</span>
+    &lt;/body&gt;  <span>&lt;!-- fermeture du corps de la page --&gt;</span>
+&lt;/html&gt;  <span>&lt;!-- fin de la page --&gt;</span></code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/roles/skeleton.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Confondre les rôles du HTML et du CSS.</li>
+                        <li>Croiser les balises dans le fichier HTML.</li>
+                        <li>Écrire du code dans le<span> &lt;head&gt; </span>ou des paramètres dans le<span> &lt;body&gt; </span>(souvent,<span> &lt;title&gt;</span>).</li>
+                        <li>Oublier une balise fermante ou le<span> / </span>qu'elle contient.</li>
+                        <li>Mal indenter son code.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et comprendre du code : répondre aux questions.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;!doctype html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Présentation&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Mon site personnel&lt;/h1&gt;
+    &lt;p&gt;Bienvenue sur mon site.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Présentation&lt;/li&gt;
+      &lt;li&gt;Projets&lt;/li&gt;
+      &lt;li&gt;Contact&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            <pre class="css"><code>body {
+  font-family: Arial;
+}
+
+h1 {
+  color: red;
+  border-color: red;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  background-color: blue;
+}</code></pre>
+                            <ul>
+                                <li>Dans ce projet, où est le fichier :
+                                    <ul>
+                                        <li>index.html ?</li>
+                                        <li>style.css ?</li>
+                                    </ul>
+                                </li>
+                                <li>Quel est le titre de la page ?</li>
+                                <li>Quel est le rôle de la balise<span> &lt;h1&gt; </span>?</li>
+                                <li>Que permet de faire la règle CSS appliquée à<span> h1 </span>?</li>
+                                <li>À votre avis, quel est l’aspect de l’élément<span> &lt;ul&gt; </span>?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li >
+                    <h3>Lire et écrire du code : corriger les erreurs du code HTML suivant.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;body&gt;
+    &lt;/head&gt;
+        &lt;title&gt;Page&lt;/title&gt;
+        &lt;h1 style="color: red;"&gt;Mon titre
+        &lt;p&gt;
+            &lt;font size="5"&gt;Bienvenue sur mon site&lt;/font&gt;
+        &lt;p&gt;
+        &lt;p style="margin-left: 20px;"&gt;
+            Projets
+        &lt;/p&gt;
+&lt;p&gt;Contact&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder le contenu de la page ci-dessous (négliger la mise en forme).</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <img src="../assets/roles/ex3.png" alt="Capture d'écran de la page à coder.">
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/roles/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

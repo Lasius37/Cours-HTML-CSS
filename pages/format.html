@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Mise en forme : CSS</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#call">Appel d'un fichier CSS par un fichier HTML</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#syntax">Syntaxe d'une règle CSS</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#selectors">Sélecteurs simples</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#text">Texte</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#border-margin">Bordures et marges</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#background">Arrière-plan</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="call">
+            <h2>Appel d'un fichier CSS par un fichier HTML</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Ce lien se fait dans<span> &lt;head&gt;</span>. Sans ce lien, aucun style n'est appliqué.
+                    </p>
+                    <pre class="html"><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/call.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="syntax">
+            <h2>Syntaxe d'une règle CSS</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Une règle CSS est composée d'un sélecteur, puis d'un bloc de couples "propriété: valeur".
+                    </p>
+                    <pre class="css"><code>p {
+    color: black;
+    font-size: 14px;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/syntax.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="selectors">
+            <h2>Sélecteurs simples</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Sélecteur de type : on sélectionne tous les éléments de type<span> &lt;p&gt; </span>par exemple.</li>
+                        <li>Sélecteur de classe : on sélectionne tous les éléments de classe<span> class="info" </span>par exemple.</li>
+                        <li>Si une propriété est définie deux fois, la classe est prioritaire sur le type.</li>
+                    </ul>
+                    <pre class="html"><code>&lt;p class="info"&gt;Du texte&lt;/p&gt;
+&lt;p class="info"&gt;Encore du texte&lt;/p&gt;</code></pre>
+                    <pre class="css"><code>p {
+    color: black;
+}
+
+.info {
+    color: green;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/selectors.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="text">
+            <h2>Textes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        On peut modifier de nombreux paramètres sur le texte, comme :
+                    </p>
+                    <pre class="css"><code>p {
+    font-family: Arial, sans-serif;  <span>/* la police d’écriture */</span>
+    font-size: 16px;  <span>/* la taille */</span>
+    line-height: 1.5;  <span>/* l’interligne */</span>
+    text-align: justify;  <span>/* l’alignement */</span>
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/text.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="border-margin">
+            <h2>Bordures et marges</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Les éléments sont des boîtes rectangulaires. Pour chaque boîte, on peut modifier par exemple :
+                    </p>
+                    <pre class="css"><code>section{
+    margin: 20px;  <span>/* la marge extérieure */</span>
+    padding: 10px;  <span>/* la marge intérieure */</span>
+    border: 2px solid black;  <span>/* la bordure */</span>
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/border-margin.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="background">
+            <h2>Arrière-plan</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Le fond peut être coloré ou illustré.
+                    </p>
+                    <pre class="css"><code>header {
+    background-color: lightgray;  <span>/* on met une couleur */</span>
+}
+
+section {
+    background-image: url("fond.jpg");  <span>/* on met une image (plus difficile) : */</span>
+    background-size: cover;  <span>/* cela nécessite des paramètres en plus */</span>
+}
+</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/format/background.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Oublier de lier le fichier CSS au fichier HTML.</li>
+                        <li>Oublier le<span> ; </span>à la fin du couple "propriété: valeur".</li>
+                        <li>Confondre<span> margin </span>(marge extérieure) et<span> padding </span>(marge intérieure).</li>
+                        <li>Utiliser une classe en CSS sans l’avoir utilisée en HTML.</li>
+                        <li>Chercher à mettre en forme avant d’avoir structuré la page.</li>
+                        <li>Multiplier les styles différents sans cohérence.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et comprendre du code : indiquer la couleur et la taille de police de chaque élément (par défaut, elle est de 16px).</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;h2 class="cl_1 cl_2"&gt;Titre 1&lt;/h2&gt;
+
+&lt;p class="cl_2"&gt;Paragraphe 1&lt;/p&gt;
+&lt;p&gt;Paragraphe 2&lt;/p&gt;
+&lt;p class="cl_1"&gt;Paragraphe 3&lt;/p&gt;
+
+&lt;h2 class="cl_1"&gt;Titre 2&lt;/h2&gt;
+
+&lt;p&gt;Paragraphe 4&lt;/p&gt;
+&lt;p class="cl_1"&gt;Paragraphe 5&lt;/p&gt;
+&lt;p&gt;Paragraphe 6&lt;/p&gt;</code></pre>
+                            <pre class="css"><code>h2 {
+    color: red;
+    font-size: 24px;
+}
+
+p {
+    color: blue;
+}
+
+.cl_1 {
+    color: green;
+}
+
+.cl_2 {
+    font-size: 18px;
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et écrire du code : corriger les erreurs du code suivant.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="css"><code>p {
+    color blue
+    font-size: 16px
+}
+
+.info {
+    font-size: 18px;
+    color: green
+    padding: 10px 5px;
+
+titre {
+margin 20 px;
+background color: orange;
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder en CSS pour obtenir le résultat demandé.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>une marge extérieure de 20 px pour la section,</li>
+                                <li>un texte justifié, de taille 20px, dans les paragraphes,</li>
+                                <li>une marge intérieure de 10 px pour le titre,</li>
+                                <li>un titre centré, de taille 28px,</li>
+                                <li>la police "<span>sans-serif</span>" dans toute la section,</li>
+                                <li>une bordure noire de 2 px pour le deuxième paragraphe seulement.</li>
+                            </ul>
+                            <pre class="html"><code>&lt;section&gt;
+    &lt;h2&gt;Mon titre&lt;/h2&gt;
+    &lt;p&gt;
+        Mon premier paragraphe très long qui prend plusieurs lignes pour qu’on puisse
+        vérifier si la mise en forme est correcte.
+    &lt;/p&gt;
+    &lt;p&gt;Mon second paragraphe plus court, c’est nettement moins pénible.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/format/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

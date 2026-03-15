@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#process">Principe du modèle<span> Flexbox</span></a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#container">Propriétés du conteneur</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="process">
+            <h2>Principe du modèle<span> Flexbox</span></h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Le modèle<span> Flexbox </span>permet d’organiser facilement des éléments en ligne
+                        ou en colonne, et de gérer leur alignement et leur espacement.<span> Flexbox </span>
+                        agit sur un conteneur et sur les éléments qu’il contient. Tous les éléments à l’intérieur du
+                        conteneur (ici, les éléments de classe<span> .item</span>) deviennent des éléments
+                        flexibles.
+                    </p>
+                    <pre class="html"><code>&lt;div class="conteneur"&gt;
+    &lt;div class="item"&gt;...&lt;/div&gt;
+    &lt;div class="item"&gt;...&lt;/div&gt;
+    &lt;div class="item"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <br>
+                    <pre class="css"><code>.conteneur {
+    display: flex;
+}
+</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/flexbox/process.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="container">
+            <h2>Propriétés du conteneur</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Il y a plusieurs propriétés associées au modèle<span> Flexbox</span>.</p>
+                    <pre class="css"><code>.container {
+    display: flex;  <span>/* déclaration du Flexbox */</span>
+    flex-wrap: wrap;  <span>/* retour à la ligne */</span>
+    flex-direction: row;  <span>/* direction de l’axe principal */</span>
+    justify-content: center;  <span>/* alignement selon l’axe principal */</span>
+    align-items: center;  <span>/* alignement selon l’axe secondaire */</span>
+    gap: 25px;  <span>/* espace entre les éléments enfants */</span>
+}
+</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/flexbox/container.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Oublier<span> display: flex </span>sur le conteneur.</li>
+                        <li>Appliquer les propriétés<span> Flexbox </span>aux éléments enfants au lieu du conteneur.</li>
+                        <li>Mélanger<span> justify-content </span>et<span> align-items</span>.</li>
+                        <li>Utiliser<span> Flexbox </span>pour tout, même quand une mise en page simple suffit.</li>
+                        <li>Ne pas tester le rendu avec plusieurs éléments.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et comprendre du code : décrire la disposition des éléments codés.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;div class="menu"&gt;
+    &lt;div&gt;Accueil&lt;/div&gt;
+    &lt;div&gt;Projets&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            <br>
+                            <pre class="css"><code>.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et écrire du code : corriger le code pour obtenir le rendu demandé.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>Les éléments sont alignés en haut.</li>
+                                <li>Les éléments sont centrés horizontalement.</li>
+                                <li>Les éléments sont espacés de 20 pixels.</li>
+                                <li>Les éléments vont à la ligne s'ils sont trop nombreux.</li>
+                            </ul>
+                            <pre class="css"><code>.container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder pour obtenir le rendu demandé, sans coder de HTML.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>chaque carte a une hauteur de 150px et une largeur de 300px,</li>
+                                <li>les cartes occupent toute la largeur du parent,</li>
+                                <li>les cartes se placent à la ligne si la fenêtre est trop petite,</li>
+                                <li>les cartes sont espacées de 10px,</li>
+                                <li>l’espace libre restant est réparti entre les cartes.</li>
+                            </ul>
+                            <pre class="html"><code>&lt;div class="cartes"&gt;
+    &lt;div class="carte"&gt;Carte 1&lt;/div&gt;
+    &lt;div class="carte"&gt;Carte 2&lt;/div&gt;
+    &lt;div class="carte"&gt;Carte 3&lt;/div&gt;
+    ...
+    &lt;div class="carte"&gt;Carte 9&lt;/div&gt;
+    &lt;div class="carte"&gt;Carte 10&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/flexbox/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Projet complexe</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#lisibility">Lisibilité du code HTML</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#organize">Organisation logique d'une page longue</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#navigation">La navigation dans un site</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#div-span">Bon usage de<span class="title-code"> &lt;div&gt; </span>et<span class="title-code"> &lt;span&gt;</span></a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="lisibility">
+            <h2>Lisibilité du code HTML</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Il est essentiel que le HTML soit correctement indenté et aéré pour être bien lisible. Des
+                        commentaires bien placés permettent de repérer les grandes parties du document ; ils sont
+                        bornés par<span> &lt;!-- </span>et<span> --&gt;</span>.
+                        Cela permet de gagner en lisibilité, même pour un fichier court. Exemple :
+                    </p>
+                    <pre class="html"><code>&lt;body&gt;
+
+    <span>&lt;!-- En-tête du site --&gt;</span>
+    &lt;header&gt;
+        &lt;h1&gt;Mon site&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="index.html"&gt;Accueil&lt;/a&gt;
+            &lt;a href="projets.html"&gt;Projets&lt;/a&gt;
+            &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+        &lt;/header&gt;
+
+    <span>&lt;!-- Contenu principal --&gt;</span>
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Présentation&lt;/h2&gt;
+            &lt;p&gt;Bienvenue sur mon site personnel.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Projets&lt;/h2&gt;
+            &lt;p&gt;Voici quelques projets réalisés.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    <span>&lt;!-- Pied de page --&gt;</span>
+    &lt;footer&gt;
+        &lt;p&gt;Contact : exemple@email.fr&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;</code></pre>
+                    <br>
+                    <pre class="html"><code>&lt;body&gt;
+&lt;header&gt;&lt;h1&gt;Mon site&lt;/h1&gt;&lt;nav&gt;&lt;a href="index.html"&gt;Accueil&lt;/a&gt;&lt;a href="projets.html"&gt;Projets&lt;/a&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/nav&gt;&lt;/header&gt;
+&lt;main&gt;
+&lt;section&gt;&lt;h2&gt;Présentation&lt;/h2&gt;&lt;p&gt;Bienvenue sur mon site personnel.&lt;/p&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;Projets&lt;/h2&gt;&lt;p&gt;Voici quelques projets réalisés.&lt;/p&gt;&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;&lt;p&gt;Contact : exemple@email.fr&lt;/p&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/complex-structure/lisibility.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="organize">
+            <h2>Organisation logique d'une page longue</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        L’utilisation des balises structurantes est essentielle pour découper le code en parties
+                        clairement identifiées et identifiables, avec un rôle précis. La mise en page se fait toujours
+                        en CSS. Exemples d’architecture d’une page longue :
+                    </p>
+                    <ul><li>Exemple 1 - avec<span> &lt;aside&gt; </span>:</li></ul>
+                    <img src="../assets/complex-structure/example1.png" alt="Une représentation de l'architecture d'une page HTML.">
+                    <ul><li>Exemple 2 -<span> &lt;nav&gt; </span>dans le<span> &lt;footer&gt; </span>:</li></ul>
+                    <img src="../assets/complex-structure/example2.png" alt="Une représentation de l'architecture d'une page HTML.">
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/complex-structure/organize.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="navigation">
+            <h2>La navigation dans un site</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        Les éléments de navigation sont regroupés dans la balise<span> &lt;nav&gt;</span>,
+                        sous forme de liens (<span>&lt;a&gt;</span>). Pour être bien identifiable par
+                        l'utilisateur, la navigation doit être claire et identique sur toutes les pages du site.
+                    </p>
+                    <ul>
+                        <li>Navigation principale :<span> &lt;nav&gt; </span>est placé dans le<span> &lt;header&gt; </span>(horizontale) ou dans un<span> &lt;aside&gt; </span>(latérale) ; on gère toujours la disposition des éléments via le CSS.</li>
+                        <li>Navigation vers des liens externes ou navigation utilitaire : la balise<span> &lt;nav&gt; </span>est dans le<span> &lt;footer&gt;</span>.</li>
+                        <li>Navigation au sein d’une même page longue : les liens ciblent des<span> id </span>(ex : un<span> id </span>par<span> &lt;section&gt;</span>).</li>
+                        <li>Navigation hiérarchisée : pour des menus et sous-menus ; il peut y avoir plusieurs<span> &lt;nav&gt; </span>imbriqués.</li>
+                    </ul>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/complex-structure/navigation.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="div-span">
+            <h2>Bon usage de<span class="title-code"> &lt;div&gt; </span>et<span class="title-code"> &lt;span&gt;</span></h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>
+                        <span>&lt;div&gt; </span>et <span> &lt;span&gt; </span>
+                        sont des balises sans signification (on dit qu’elles sont "neutres"). Ils sont utilisés
+                        quand aucune autre balise n’est pertinente ou lors de la mise en forme du site en CSS.
+                    </p>
+                    <ul>
+                        <li><span>&lt;div&gt; </span>est affiché comme un élément bloc (sous l’élément qui le précède).</li>
+                        <li><span>&lt;span&gt; </span>est affiché comme un élément inline (sur la même ligne que l’élément qui le précède).</li>
+                    </ul>
+                    <pre class="html"><code>&lt;div&gt;
+  &lt;div&gt;texte 1&lt;/div&gt;
+  &lt;div&gt;texte 2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span&gt;texte 3&lt;/span&gt;
+  &lt;span&gt;texte 4&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    <img src="../assets/complex-structure/div-span.png" alt="exemple de l'utilisation de &lt;div&gt; et &lt;span&gt;">
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/complex-structure/div-span.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Code non indenté ou mal indenté.</li>
+                        <li>Absence de titres dans une page longue.</li>
+                        <li>Navigation placée n’importe où dans la page.</li>
+                        <li>Dupliquer la navigation différemment sur chaque page.</li>
+                        <li>Utiliser uniquement des<span> &lt;div&gt; </span>pour structurer toute la page.</li>
+                        <li>Commentaires trop nombreux ou inutiles.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire du code : légender les blocs dans cette page.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <img src="../assets/complex-structure/ex1.png" alt="Dessin de boîtes imbriquées à légender">
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et écrire du code : nettoyer et commenter le code suivant pour le rendre lisible.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;header&gt;&lt;h1&gt;Mon site&lt;/h1&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;a href="index.html"&gt;Accueil&lt;/a&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/nav&gt;
+&lt;main&gt;&lt;section&gt;&lt;p&gt;Présentation&lt;/p&gt;&lt;p&gt;Texte...&lt;/p&gt;&lt;/section&gt;&lt;/main&gt;</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder pour obtenir le rendu demandé, sans coder de CSS.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <p>Coder lisiblement la navigation d’un mini-site de 4 pages (accueil, activités, historique, contact).</p>
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/complex-structure/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Hiérarchie visuelle et cohérence graphique</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#titles">Hiérarchie des titres</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#colors">Choix raisonné des couleurs</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#contrast-lisibility">Gestion des contrastes et de la lisibilité</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#spacing">Gestion des espacements</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="titles">
+            <h2>Hiérarchie des titres</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Les titres doivent refléter l'organisation du contenu.</p>
+                    <ul>
+                        <li><span>&lt;h1&gt; </span>: titre principal (un seul par page),</li>
+                        <li><span>&lt;h2&gt; </span>: grandes parties,</li>
+                        <li><span>&lt;h3&gt; </span>: sous-parties.</li>
+                    </ul>
+                    <p>La hiérarchie doit se refléter visuellement.</p>
+                    <pre class="css"><code>h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/coherence/titles.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="colors">
+            <h2>Choix raisonné des couleurs</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Les couleurs doivent être peu nombreuses, cohérentes entre elles, et servir la lisibilité. Conseil :</p>
+                    <ul>
+                        <li>1 couleur principale,</li>
+                        <li>1 couleur secondaire,</li>
+                        <li>1 couleur pour le texte.</li>
+                    </ul>
+                    <pre class="css"><code>body {
+    color: #222;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+h3, h4 {
+    color: lightblue;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/coherence/colors.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="contrast-lisibility">
+            <h2>Gestion des contrastes et de la lisibilité</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Un texte doit être lisible sans effort. À privilégier :</p>
+                    <ul>
+                        <li>texte foncé sur fond clair,</li>
+                        <li>contraste suffisant,</li>
+                        <li>taille de texte adaptée.</li>
+                    </ul>
+                    <pre class="css"><code>section {
+    background-color: #f2f2f2;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.5em;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/coherence/contrast-lisibility.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="spacing">
+            <h2>Gestion des espacements</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <p>Les espaces structurent la page autant que les couleurs. On utilise :</p>
+                    <ul>
+                        <li><span>margin </span>pour séparer les blocs,</li>
+                        <li><span>padding </span>et<span> line-height </span>pour aérer le contenu.</li>
+                    </ul>
+                    <pre class="css"><code>section {
+    margin: 30px;
+    padding: 15px;
+}</code></pre>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/coherence/spacing.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Tous les titres ont la même taille.</li>
+                        <li>Trop de couleurs différentes.</li>
+                        <li>Texte trop petit ou trop serré.</li>
+                        <li>Manque d’espace entre les sections.</li>
+                        <li>Espacements incohérents d’une page à l’autre.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et comprendre du code : analyser un site et repérer les différents titres.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <img src="../assets/coherence/ex1.png" alt="capture d'écran d'un site Internet">
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et écrire du code : améliorer la lisibilité du site en modifiant le CSS.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="css"><code>body {
+    color: lightgray;
+    background-color: white;
+}
+
+section {
+    margin: 5px;
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder pour obtenir le résultat demandé.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>Écrire le CSS pour une page qui contient :
+                                    <ul>
+                                        <li>un titre principal,</li>
+                                        <li>plusieurs sections,</li>
+                                        <li>du texte long.</li>
+                                    </ul>
+                                </li>
+                                <li>Les objectifs sont la lisibilité du texte, la mise en évidence des titres, la gestion harmonieuse des espacements, des choix de couleurs sobres.</li>
+                            </ul>
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/coherence/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

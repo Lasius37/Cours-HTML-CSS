@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Ressources externes</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#fonts">Polices Google</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#icons">Icônes Bootstrap</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#errors">Erreurs fréquentes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="fonts">
+            <h2>Polices Google</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>
+                            On importe une
+                            <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">police Google</a>
+                            (ici, la police Roboto).
+                            <pre class="html"><code>&lt;head&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;</code></pre>
+                        </li>
+                        <li>
+                            On l'utilise ensuite avec<span> font-family</span>. On prévoit une police de secours
+                            (<span>sans-serif</span>).
+                            <pre class="css"><code>body {
+    font-family: 'Roboto', sans-serif;
+}</code></pre>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/external-resources/fonts.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="icons">
+            <h2>Icônes Bootstrap</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>On importe les
+                            <a href="https://icons.getbootstrap.com" target="_blank" rel="noopener noreferrer">icônes Bootstrap</a>
+                            dans le<span> &lt;head&gt;</span>.
+                            <pre class="html"><code>&lt;head&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"&gt;
+&lt;/head&gt;</code></pre>
+                        </li>
+                        <li>
+                            On intègre la bonne icône dans le<span> &lt;body&gt; </span>(ici, l'icône d'une enveloppe).
+                            <pre class="html"><code>&lt;a href="#"&gt;&lt;i class="bi bi-enveloppe"&gt;&lt;/i&gt;contact@entreprise.fr&lt;/a&gt;</code></pre>
+                        </li>
+                        <li>On met en forme comme si c’était du texte en utilisant la classe de l’icône.
+                            <pre class="css"><code>.bi-envelope {
+    color: blue;
+}</code></pre>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video preload="none" controls controlsList="nodownload" preload="metadata">
+                        <source src="../assets/external-resources/icons.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="errors">
+            <h2>Erreurs fréquentes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <ul>
+                        <li>Multiplier les polices différentes (plus de 2).</li>
+                        <li>Choisir une police difficile à lire.</li>
+                        <li>Utiliser des icônes sans lien avec le contenu.</li>
+                        <li>Ne pas comprendre le code copié.</li>
+                        <li>Dépendre d’une ressource externe sans savoir à quoi elle sert.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="exercises">
+            <h2>Exercices</h2>
+            <ol>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et comprendre du code : comprendre l'utilisation d'une ressource.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="html"><code>&lt;link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"&gt;</code></pre>
+                            <br>
+                            <pre class="css"><code>h1 {
+    font-family: "Lato", sans-serif;
+}</code></pre>
+                            <ul>
+                                <li>Quelle police est utilisée pour les titres ?</li>
+                                <li>Où est définie la police ?</li>
+                                <li>Que se passe-t-il si la police n’est pas chargée ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Lire et écrire du code : corriger les erreurs du code suivant.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <pre class="css"><code>body {
+    font-family: Roboto;
+}</code></pre>
+                        </div>
+                    </div>
+                </li>
+
+                <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Écrire du code : coder pour obtenir le rendu demandé.</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>Appliquer une police Google à tout votre site.</li>
+                                <li>Utilise une icône Bootstrap pour illustrer une information de contact.</li>
+                            </ul>
+                        </div>
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__video">
+                            <video preload="none" controls controlsList="nodownload" preload="metadata">
+                                <source src="../assets/external-resources/ex3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

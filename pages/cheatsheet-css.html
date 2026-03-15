@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js" defer></script>
+    <title>Mise en forme : CSS</title>
+</head>
+
+<body>
+    <!-- ***************************************************************************************************************
+         HEADER
+    **************************************************************************************************************** -->
+    <header>
+        <h1>Les langages HTML et CSS</h1>
+
+        <!-- navbar
+             ======================================================================================================= -->
+        <nav>
+            <ul class="navbar"></ul>
+        </nav>
+    </header>
+
+    <!-- ***************************************************************************************************************
+         ASIDE
+    **************************************************************************************************************** -->
+    <aside>
+
+        <!-- sidebar
+             ======================================================================================================= -->
+        <nav class="sidebar">
+
+            <!-- sidebar group ------------------------------------------------------------------------------------- -->
+            <section class="sidebar__group">
+                <h2>Dans cette page</h2>
+                <ul>
+                    <li class="sidebar__element">
+                        <a href="#bind">Lier le fichier .css au fichier .html</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#selectors">Sélecteurs</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#size">Taille</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#margin-padding">Marges</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#border">Bordures (<span>border</span>)</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#font">Police (<span>font</span>)</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#text">Texte</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#table">Tableaux</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#list">Listes</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#background">Arrière-plan (<span>background)</span></a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#special">Effets spéciaux</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#flexbox"><span>Flexbox</span></a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#colors">Couleurs</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#transparency">Transparence</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#hex-rgb">Hexadécimal ↔ RGB</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#units">Unités de mesure</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#online">Aide en ligne</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </aside>
+
+    <!-- ***************************************************************************************************************
+         MAIN
+    **************************************************************************************************************** -->
+    <main>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="bind">
+            <h2>Lier le fichier .css au fichier .html</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <pre class="html"><code>&lt;link rel="stylesheet" href="style.css"&gt; &nbsp;&lt;!-- à placer dans &lt;head&gt; --&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="selectors">
+            <h2>Sélecteurs</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>type</td>
+                                <td>
+                                    <pre class="css"><code>p {...}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>classe</td>
+                                <td>
+                                    <pre class="css"><code>.classe-a {...}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>multiple</td>
+                                <td>
+                                    <pre class="css"><code>.classe-a, p {...}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>combiné (descendant)</td>
+                                <td>
+                                    <pre class="css"><code>div p {...}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>combiné (enfant direct)</td>
+                                <td>
+                                    <pre class="css"><code>.classe-c > p {...}</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="size">
+            <h2>Taille</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>largeur</td>
+                                <td>
+                                    <pre class="css"><code>width</code></pre>
+                                </td>
+                                <td>
+                                    valeur
+                                    <pre class="css"><code>fit-content</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>hauteur</td>
+                                <td>
+                                    <pre class="css"><code>height</code></pre>
+                                </td>
+                                <td>
+                                    valeur
+                                    <pre class="css"><code>fit-content</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="margin-padding">
+            <h2>Marges</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>marges extérieures</td>
+                                <td>
+                                    <pre class="css"><code>margin</code></pre>
+                                </td>
+                                <td rowspan="2">
+                                    <pre class="css"><code>-left</code></pre>
+                                    <pre class="css"><code>-right</code></pre>
+                                    <pre class="css"><code>-top</code></pre>
+                                    <pre class="css"><code>-bottom</code></pre>
+                                </td>
+                                <td>
+                                    valeur
+                                    <pre class="css"><code>auto</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>marges intérieures</td>
+                                <td>
+                                    <pre class="css"><code>padding</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="border">
+            <h2>Bordures (<span>border</span>)</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>épaisseur</td>
+                                <td>
+                                    <pre class="css"><code>border-width:</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                            <tr>
+                                <td>style de trait</td>
+                                <td>
+                                    <pre class="css"><code>border-style:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>solid</code></pre>
+                                    <pre class="css"><code>dotted</code></pre>
+                                    <pre class="css"><code>dashed</code></pre>
+                                    <pre class="css"><code>double</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>couleur</td>
+                                <td>
+                                    <pre class="css"><code>border-color:</code></pre>
+                                </td>
+                                <td>couleur</td>
+                            </tr>
+                            <tr>
+                                <td>coins arrondis</td>
+                                <td>
+                                    <pre class="css"><code>border-radius:</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="font">
+            <h2>Police (<span>font</span>)</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>police</td>
+                                <td>
+                                    <pre class="css"><code>font-family:</code></pre>
+                                </td>
+                                <td>polices</td>
+                            </tr>
+                            <tr>
+                                <td>taille</td>
+                                <td>
+                                    <pre class="css"><code>font-size:</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                            <tr>
+                                <td>interligne</td>
+                                <td>
+                                    <pre class="css"><code>line-height:</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                            <tr>
+                                <td>italique</td>
+                                <td>
+                                    <pre class="css"><code>font-style:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>normal</code></pre>
+                                    <pre class="css"><code>italic</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>gras</td>
+                                <td>
+                                    <pre class="css"><code>font-weight:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>normal</code></pre>
+                                    <pre class="css"><code>bold</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="text">
+            <h2>Texte</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>couleur</td>
+                                <td>
+                                    <pre class="css"><code>color:</code></pre>
+                                </td>
+                                <td>couleur</td>
+                            </tr>
+                            <tr>
+                                <td>alignement</td>
+                                <td>
+                                    <pre class="css"><code>text-align:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>left</code></pre>
+                                    <pre class="css"><code>right</code></pre>
+                                    <pre class="css"><code>justify</code></pre>
+                                    <pre class="css"><code>center</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>soulignement</td>
+                                <td>
+                                    <pre class="css"><code>text-decoration:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>none</code></pre>
+                                    <pre class="css"><code>underline</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>alinéa</td>
+                                <td>
+                                    <pre class="css"><code>text-indent:</code></pre>
+                                </td>
+                                <td>valeur</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="table">
+            <h2>Tableaux</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>cellules</td>
+                                <td>
+                                    <pre class="css"><code>border-collapse:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>collapse</code></pre>
+                                    <pre class="css"><code>separate</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="list">
+            <h2>Listes</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>puces</td>
+                                <td rowspan="2">
+                                    <pre class="css"><code>list-style:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>disc</code></pre>
+                                    <pre class="css"><code>circle</code></pre>
+                                    <pre class="css"><code>square</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>numéros</td>
+                                <td>
+                                    <pre class="css"><code>decimal</code></pre>
+                                    <pre class="css"><code>upper-roman</code></pre>
+                                    <pre class="css"><code>lower-roman</code></pre>
+                                    <pre class="css"><code>upper-alpha</code></pre>
+                                    <pre class="css"><code>lower-alpha</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="background">
+            <h2>Arrière-plan (<span>background</span>)</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>couleur</td>
+                                <td>
+                                    <pre class="css"><code>background-color:</code></pre>
+                                </td>
+                                <td colspan="2">couleur</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7">image</td>
+                                <td>
+                                    <pre class="css"><code>background-image:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>url(image)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>background-repeat:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>repeat</code></pre>
+                                    <pre class="css"><code>no-repeat</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>background-attachment:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>scroll</code></pre>
+                                    <pre class="css"><code>fixed</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <pre class="css"><code>background-position:</code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>center</code></pre>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>top</code></pre>
+                                    <pre class="css"><code>bottom</code></pre>
+                                    <pre class="css"><code>left</code></pre>
+                                    <pre class="css"><code>right</code></pre>
+                                </td>
+                                <td>+ valeur</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>background-size:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>contain</code></pre>
+                                    <pre class="css"><code>cover</code></pre>
+                                    valeur
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="special">
+            <h2>Effets spéciaux</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td>ombre (texte)</td>
+                                <td>
+                                    <pre class="css"><code>text-shadow:</code></pre>
+                                </td>
+                                <td>valeur valeur valeur couleur</td>
+                            </tr>
+                            <tr>
+                                <td>ombre (élément)</td>
+                                <td>
+                                    <pre class="css"><code>box-shadow:</code></pre>
+                                </td>
+                                <td>valeur valeur valeur couleur</td>
+                            </tr>
+                            <tr>
+                                <td>opacité (objet)</td>
+                                <td>
+                                    <pre class="css"><code>opacity:</code></pre>
+                                </td>
+                                <td>valeur (0 → 1)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="flexbox">
+            <h2><span>Flexbox</span></h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <img src="../assets/cheatsheet-css/flexbox.png" alt="">
+                        <p>Toutes ces propriétés portent sur le conteneur.</p>
+                        <table>
+                            <tr>
+                                <td>initialisation</td>
+                                <td>
+                                    <pre class="css"><code>display:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>flex</code></pre>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>espacement</td>
+                                <td>
+                                    <pre class="css"><code>gap:</code></pre>
+                                </td>
+                                <td colspan="2">valeur</td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/gap.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">retour à la ligne</td>
+                                <td rowspan="2">
+                                    <pre class="css"><code>flex-wrap:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>nowrap</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/flex-wrap-nowrap.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>wrap</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/flex-wrap-wrap.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">axe principal</td>
+                                <td rowspan="2">
+                                    <pre class="css"><code>flex-direction:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>row</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/flex-dir-row.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>column</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/flex-dir-col.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7">distribution selon l'axe principal</td>
+                                <td rowspan="7">
+                                    <pre class="css"><code>justify-content:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>flex-start</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-flex-start.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>flex-end</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-flex-end.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>center</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-center.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>space-between</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-space-between.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>space-around</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-space-around.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>space-evenly</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-space-evenly.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>stretch</code></pre>
+                                </td>
+                                <td>
+                                    nécessite :
+                                    <pre class="css"><code>.item {
+    flex: 1;
+}</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/justify-stretch.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">distribution selon l'axe secondaire</td>
+                                <td rowspan="4">
+                                    <pre class="css"><code>align-items:</code></pre>
+                                </td>
+                                <td colspan="2">
+                                    <pre class="css"><code>flex-start</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/align-flex-start.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>flex-end</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/align-flex-end.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre class="css"><code>center</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/align-center.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="css"><code>stretch</code></pre>
+                                </td>
+                                <td>
+                                    nécessite :
+                                    <pre class="css"><code>.item {
+    flex: 1;
+}</code></pre>
+                                </td>
+                                <td>
+                                    <img src="../assets/cheatsheet-css/align-stretch.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="colors">
+            <h2>Couleurs</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>Hexadécimal</td>
+                                <td>RGB</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #000000"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">00</span><span class="green">00</span><span class="blue">00</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">0</span>, <span class="green">0</span>, <span class="blue">0</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ffffff"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">ff</span><span class="green">ff</span><span class="blue">ff</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">255</span>, <span class="green">255</span>, <span class="blue">255</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #808080"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">80</span><span class="green">80</span><span class="blue">80</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">128</span>, <span class="green">128</span>, <span class="blue">128</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ff0000"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">ff</span><span class="green">00</span><span class="blue">00</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">255</span>, <span class="green">0</span>, <span class="blue">0</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #00ff00"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">00</span><span class="green">ff</span><span class="blue">00</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">0</span>, <span class="green">255</span>, <span class="blue">0</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #0000ff"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">00</span><span class="green">00</span><span class="blue">ff</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">0</span>, <span class="green">0</span>, <span class="blue">255</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ffff00"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">ff</span><span class="green">ff</span><span class="blue">00</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">255</span>, <span class="green">255</span>, <span class="blue">0</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ff00ff"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">ff</span><span class="green">00</span><span class="blue">ff</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">255</span>, <span class="green">0</span>, <span class="blue">255</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #00ffff"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">00</span><span class="green">ff</span><span class="blue">ff</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">0</span>, <span class="green">255</span>, <span class="blue">255</span>)</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #c06fe8"></td>
+                                <td>
+                                    <pre class="css"><code>#<span class="red">c0</span><span class="green">6f</span><span class="blue">e8</span></code></pre>
+                                </td>
+                                <td>
+                                    <pre class="css"><code>rgb(<span class="red">192</span>, <span class="green">111</span>, <span class="blue">232</span>)</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="transparency">
+            <h2>Transparence</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <pre class="css"><code>rgba(<span class="red">0</span>, <span class="green">0</span>, <span class="blue">0</span>, 0.5) <span>/* 0 ↔ transparent, 1 ↔ opaque. */</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="hex-rgb">
+            <h2>Hexadécimal ↔ RGB</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <p>Lien vers <a href="https://htmlcolorcodes.com/fr/" target="_blank" rel="noopener noreferrer">Color Codes</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="units">
+            <h2>Unités de mesure</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <table class="cheatsheet">
+                            <tr>
+                                <td>taille fixe</td>
+                                <td>
+                                    <pre class="css"><code>px</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>taille variable selon la taille de l'élément parent</td>
+                                <td>
+                                    <pre class="css"><code>%</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>taille variable selon la police du parent</td>
+                                <td>
+                                    <pre class="css"><code>em</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content section
+             ======================================================================================================= -->
+        <section id="online">
+            <h2>Aide en ligne</h2>
+            <div class="layout">
+
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <div class="cheatsheet">
+                        <p>Lien vers la <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Fondation Mozilla</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***************************************************************************************************************
+         FOOTER
+    **************************************************************************************************************** -->
+    <footer>
+        <div>© Copyright - Guillaume Peyrard</div>
+    </footer>
+</body>
+</html>

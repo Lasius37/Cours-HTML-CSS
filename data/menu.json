@@ -1,0 +1,91 @@
+{
+	"home": {
+		"id": "navbar__home",
+		"target": "index",
+		"icon": "bi bi-house-fill",
+		"text": "Accueil"
+	},
+	"menu": [
+		{
+			"title": "Concepts de base",
+			"subMenu": [
+				{
+					"tag": "roles",
+					"text": "Comprendre le rôle du HTML et du CSS"
+				},
+				{
+					"tag": "organize",
+					"text": "Organiser le contenu avec HTML"
+				},
+				{
+					"tag": "format",
+					"text": "Mettre en forme avec CSS"
+				},
+				{
+					"tag": "project-cv",
+					"text": "Projet : le CV"
+				}
+			]
+		},
+		{"title": "Concepts intermédiaires",
+			"subMenu": [
+				{
+					"tag": "complex-structure",
+					"text": "Structurer un projet plus complexe"
+				},
+				{
+					"tag": "medium-selectors",
+					"text": "Utiliser des sélecteurs CSS intermédiaires"
+				},
+				{
+					"tag": "special-format",
+					"text": "Maîtriser des cas particuliers de mise en forme"
+				},
+				{
+					"tag": "flexbox",
+					"text": "Utiliser les<span> Flexbox</span>"
+				},
+				{
+					"tag": "project-mini-site",
+					"text": "Projet : un mini-site"
+				}
+			]
+		},
+		{"title": "Concepts avancés",
+			"subMenu": [
+				{
+					"tag": "organize2",
+					"text": "Organiser un projet complet"
+				},
+				{
+					"tag": "coherence",
+					"text": "Associer hiérarchie visuelle et cohérence graphique"
+				},
+				{
+					"tag": "visual-effects",
+					"text": "Maîtriser les effets visuels"
+				},
+				{
+					"tag": "external-resources",
+					"text": "Utiliser les ressources externes"
+				},
+				{
+					"tag": "project-company",
+					"text": "Projet : un site d'entreprise"
+				}
+			]
+		},
+		{"title": "Cheatsheet",
+			"subMenu": [
+				{
+					"tag": "cheatsheet-html",
+					"text": "Aide HTML"
+				},
+				{
+					"tag": "cheatsheet-css",
+					"text": "Aide CSS"
+				}
+			]
+		}
+	]
+}
