@@ -84,6 +84,10 @@
 				{
 					"tag": "cheatsheet-css",
 					"text": "Aide CSS"
+				},
+				{
+					"tag": "commandments",
+					"text": "10 commandements pour créer un site"
 				}
 			]
 		}
