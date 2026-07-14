@@ -290,6 +290,7 @@ h2 span, h3 span, .sidebar__element a span {
     min-width: 100%;
     padding-left: var(--s-gap);
     box-sizing: border-box;
+    text-align: left;
 }
 
 .layout__text .python {

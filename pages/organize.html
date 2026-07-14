@@ -144,10 +144,10 @@
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
                     <p>
-                        Les liens permettent de naviguer entre les pages.<span> target="_blank" </span>permet d'ouvrir un nouvel onglet.
+                        Les liens permettent de naviguer entre les pages.<span> target="_blank" rel="noopener noreferrer"</span>permet d'ouvrir un nouvel onglet.
                     </p>
                     <pre class="html"><code>&lt;a href="page2.html"&gt;Aller à la page 2 du site&lt;/a&gt;
-&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Site externe&lt;/a&gt;</code></pre>
+&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Autre site&lt;/a&gt;</code></pre>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -172,7 +172,7 @@
                     </p>
                     <pre class="html"><code>&lt;img src="photo.jpg" alt="La mer"&gt;  <span>&lt;!-- alt décrit le contenu de l’image --&gt;</span>
 &lt;audio controls src="son.mp3"&gt;&lt;/audio&gt;
-&lt;video controls width="350"&gt;
+&lt;video controls&gt;
     &lt;source src="video.mp4" type="video/mp4"/&gt;
 &lt;/video&gt;</code></pre>
                 </div>
@@ -206,7 +206,7 @@
 &lt;footer&gt;&lt;/footer&gt;  <span>&lt;!-- le pied de page --&gt;</span></code></pre>
                     <p>
                         On trouve des<span> &lt;article&gt; </span>avec plusieurs <span>
-                        &lt;section&gt; </span> (page wikipedia) et inversement (ex : site d’info).
+                        &lt;section&gt; </span> (page wikipedia) et inversement (site d’info).
                     </p>
                 </div>
 
@@ -247,7 +247,7 @@
 
                 <!-- exercise -------------------------------------------------------------------------------------- -->
                 <li>
-                    <h3>Lire et comprendre du code : représenter et légender tous les éléments sous forme de rectangles.</h3>
+                    <h3>Lire du code : représenter et légender tous les éléments sous forme de rectangles.</h3>
                     <div class="layout">
 
                         <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
