@@ -18,9 +18,9 @@ const loadMenuData = async () => {
 const createElement = (tag, className="", text="") => {
     const element = document.createElement(tag);
 
-    if (className) {element.className = className};
+    if (className) {element.className = className}
 
-    if (text) {element.textContent = text};
+    if (text) {element.textContent = text}
 
     return element;
 };
@@ -90,9 +90,9 @@ const generateHome = (homeData) => {
     homeLink.href = `${ROOT}${homeData.target}.html`;
 
     const homeIcon = document.createElement("i");
-    homeIcon.classList = homeData.icon;
+    homeIcon.className = homeData.icon;
 
-    const homeText = document.createElement("span", "navbar__title");
+    const homeText = createElement("span", "navbar__title");
 
     const textNode = document.createTextNode(homeData.text);
 
@@ -101,7 +101,7 @@ const generateHome = (homeData) => {
     homeText.appendChild(textNode);
     homeMenu.appendChild(homeLink);
 
-    return homeMenu
+    return homeMenu;
 };
 
 
