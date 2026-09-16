@@ -49,7 +49,7 @@
 /* *********************************************************************************************************************
 ***                                                    INITIALIZE                                                    ***
 ********************************************************************************************************************* */
-html, body, ul, ol, pre, li, h1, h2, h3, h4, h5, h6, a, i, p, nav, td, th, section {
+/*html, body, ul, ol, pre, li, h1, h2, h3, h4, h5, h6, a, i, p, nav, td, th, section {
     font-family: var(--text-font);
     font-size: var(--text-size);
     font-weight: normal;
@@ -74,4 +74,4 @@ ul, ol {
 
 a {
     text-decoration: none;
-}
+}*/

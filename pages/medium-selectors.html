@@ -85,14 +85,14 @@
                         commente les grandes parties. On utilise<span> /* </span>et<span> */</span>.
                         Les deux morceaux de code suivants affichent le même résultat.
                     </p>
-                    <pre class="css"><code><span>/* ========================= Styles généraux ========================= */</span>
+                    <pre class="css"><code><span class="comment">/* ========================= Styles généraux ========================= */</span>
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
-<span>/* ========================= En-tête et navigation ========================= */</span>
+<span class="comment">/* ========================= En-tête et navigation ========================= */</span>
 header {
     background-color: lightgray;
     padding: 20px;
@@ -104,14 +104,14 @@ nav a {
     color: black;
 }
 
-<span>/* ========================= Contenu principal ========================= */</span>
+<span class="comment">/* ========================= Contenu principal ========================= */</span>
 section {
     margin: 20px;
     padding: 10px;
     border: 1px solid black;
 }
 
-<span>/* ========================= Pied de page ========================= */</span>
+<span class="comment">/* ========================= Pied de page ========================= */</span>
 footer {
     text-align: center;
     font-size: 14px;
@@ -143,7 +143,7 @@ footer{text-align:center;font-size:14px;}</code></pre>
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
                     <p>Un sélecteur multiple permet d’appliquer les mêmes règles à plusieurs éléments.</p>
-                    <pre class="css"><code>h1, h2, h3 {  <span>/* les éléments de type h1, h2 et h3 sont concernés */</span>
+                    <pre class="css"><code>h1, h2, h3 {  <span class="comment">/* les éléments de type h1, h2 et h3 sont concernés */</span>
     color: darkred;
 }</code></pre>
                 </div>
@@ -168,17 +168,17 @@ footer{text-align:center;font-size:14px;}</code></pre>
                     <p>Il est possible de combiner les éléments selon leur contexte. Cela évite de créer des classes.</p>
                     <ul>
                         <li>Sélecteur de descendant :
-                            <pre class="css"><code>section p {  <span>/* les paragraphes inclus dans les sections sont concernés */</span>
+                            <pre class="css"><code>section p {  <span class="comment">/* les paragraphes inclus dans les sections sont concernés */</span>
     color: blue;
 }</code></pre>
                         </li>
                         <li>Sélecteur de parent direct :
-                            <pre class="css"><code>section > p {  <span>/* les paragraphes "enfant" des sections sont concernés */</span>
+                            <pre class="css"><code>section > p {  <span class="comment">/* les paragraphes "enfant" des sections sont concernés */</span>
     color: green;
 }</code></pre>
                         </li>
                         <li>Combinaison type + classe :
-                            <pre class="css"><code>p.important {  <span>/* les paragraphes de classe .important sont concernés */</span>
+                            <pre class="css"><code>p.important {  <span class="comment">/* les paragraphes de classe .important sont concernés */</span>
     font-weight: bold;
 }</code></pre>
                         </li>
