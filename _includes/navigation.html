@@ -1,0 +1,71 @@
+<details id="menu-container">
+    <summary id="menu-opener" aria-label="Menu principal">
+        <i class="bi bi-list" aria-hidden="true"></i>
+    </summary>
+
+    <div id="full-menu">
+        <a class="menu" id="home-btn" href="{{ '/index.html' | relative_url }}">
+            <i class="bi bi-house-fill"></i>
+            <span>Accueil</span>
+        </a>
+
+        <div class="menu" id="main-menu">
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts de base</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/roles.html' | relative_url }}">Comprendre le rôle du HTML et du CSS</a></li>
+                    <li><a href="{{ '/pages/organize.html' | relative_url }}">Organiser le contenu avec HTML</a></li>
+                    <li><a href="{{ '/pages/format.html' | relative_url }}">Mettre en forme avec CSS</a></li>
+                    <li><a href="{{ '/pages/project-cv.html' | relative_url }}">Projet : le CV</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts intermédiaires</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/complex-structure.html' | relative_url }}">Structurer un projet plus complexe</a></li>
+                    <li><a href="{{ '/pages/medium-selectors.html' | relative_url }}">Utiliser les sélecteurs CSS intermédiaires</a></li>
+                    <li><a href="{{ '/pages/special-format.html' | relative_url }}">Maîtriser des cas particuliers de mise en forme</a></li>
+                    <li><a href="{{ '/pages/flexbox.html' | relative_url }}">Utiliser les Flexbox</a></li>
+                    <li><a href="{{ '/pages/project-mini-site.html' | relative_url }}">Projet : un mini-site</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts avancés</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/organize2.html' | relative_url }}">Organiser un projet complet</a></li>
+                    <li><a href="{{ '/pages/coherence.html' | relative_url }}">Associer hiérarchie visuelle et cohérence graphique</a></li>
+                    <li><a href="{{ '/pages/visual-effects.html' | relative_url }}">Maîtriser les effets visuels</a></li>
+                    <li><a href="{{ '/pages/external-resources.html' | relative_url }}">Utiliser les ressources externes</a></li>
+                    <li><a href="{{ '/pages/project-company.html' | relative_url }}">Projet : un site vitrine d'entreprise</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Cheatsheets</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/cheatsheet-html.html' | relative_url }}">Aide HTML</a></li>
+                    <li><a href="{{ '/pages/cheatsheet-css.html' | relative_url }}">Aide CSS</a></li>
+                    <li><a href="{{ '/pages/commandments.html' | relative_url }}">10 commandements</a></li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</details>
