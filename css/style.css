@@ -1,23 +1,54 @@
+/* --------------------------------------------- Variables ---------------------------------------------*/:root {
+    --main-color: #4A2C6D;
+    --main-color-light: #D2CADB;
+    --css: #006eba;
+    --css-light: #BFDBEE;
+    --html: #e02e00;
+    --html-light: #F7CBBF;
+    --python: #3776AB;
+    --python-light: #FFF4CE;
+    --js: #e4bd00;
+    --js-light: #F8EEBF;
+    --ai: #000000;
+    --ai-light: #595959;
+    --console: #303030;
+    --console-light: #606060;
+    --comment-color: #808080;
+    --text-color: #008000;
+    --number-color: #0000aa;
+    --word-color: #ff8080;
+    --function-color: #800080;
+    --error-color: #aa0000;
+
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Nunito Sans", sans-serif;
+    --code-font: "Source Code Pro", monotype;
+    --ai-font: "Arial", sans-serif;
+    --handwriting-font: "Segoe Print", cursive;
+}
+
 /* --------------------------------------------- Mobile-first ---------------------------------------------*/
+.large-screen {
+    display: none;
+}
+
 html {
     font-family: var(--text-font);
-    background-color: #404040;
     font-size: clamp(16px, 14px + 0.3vw, 20px);
     box-sizing: border-box;
+    background-color: white;
+    padding: 0;
 }
 
 body {
-    margin: 10px;
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 
 
 header {
     background-color: var(--main-color);
-}
-
-header {
     color: var(--main-color-light);
 }
 
@@ -27,12 +58,12 @@ header, aside, main, footer {
 
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .menu-button {
     font-family: var(--title-font);
 }
 
 h1, h2, h3, p, li {
-    line-height: var(--std-line-height);
+    line-height: 1.5em;
 }
 
 h1 {
@@ -112,6 +143,80 @@ img {
 
 .comment {
     color: var(--comment-color);
+}
+
+/* MENU MOBILE ----------------------- */
+nav.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-light);
+    border: 1px solid var(--main-color);
+    border-top: none;
+    border-left: none;
+}
+
+#home {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+details, .main-menu-button {
+    color: var(--main-color);
+}
+
+.main-menu-button {
+    padding: 5px 8px;
+    border: none;
+    background-color: var(--main-color-light);
+    font-size: 1.5rem;
+}
+
+details[open] > summary {
+    background-color: white;
+}
+
+summary {
+    margin: 0;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details[open] > summary .bi {
+    transform: rotate(180deg);
+}
+
+summary .bi-chevron-down {
+    transition: transform 0.2s;
+}
+
+details[open] > ul > li:hover {
+    color: var(--main-color-light);
+}
+
+details[open] > ul > li:active {
+    background-color: var(--main-color);
+}
+
+details ul {
+    margin: 0;
+    list-style: none;
+    text-indent: 0;
+    padding: 0;
+}
+
+details ul li {
+    padding: 0 8px;
 }
 
 /* *********************************************************************************************************************
