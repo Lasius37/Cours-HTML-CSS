@@ -66,14 +66,16 @@ main ul li li {
 
 /* Harmoniser le numéro et le titre des exercices. */
 main > section ol > li::marker,
-main > section ol > li > h3 {
+main > section ol > li > h3,
+main > section ul > li > h3 {
     font-family: var(--title-font);
     font-size: 1.1rem;
     font-weight: bold;
     color: black;
 }
 
-main > section ol > li > h3 {
+main > section ol > li > h3,
+main > section ul > li > h3 {
     display: inline;
 }
 
