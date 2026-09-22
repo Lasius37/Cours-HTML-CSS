@@ -153,9 +153,30 @@ main table pre, main table code {
     border-left: 5px solid var(--console);
 }
 
+/* Couleurs associées aux types de données */
 .comment {
     color: var(--comment-color);
     font-family: var(--code-font);
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.number {
+    color: var(--number-color);
+}
+
+.word {
+    color: var(--word-color);
+}
+
+.function {
+    color: var(--function-color);
+}
+
+.error {
+    color: var(--error-color);
 }
 
 span.comment {
