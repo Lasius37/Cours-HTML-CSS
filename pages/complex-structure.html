@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Projet complexe"
+short: "Projet complexe"
+title: "Structurer un projet plus complexe"
 ---
 
 <!-- content section
@@ -14,7 +15,7 @@ title: "Projet complexe"
             <p>
                 Il est essentiel que le HTML soit correctement indenté et aéré pour être bien lisible. Des
                 commentaires bien placés permettent de repérer les grandes parties du document ; ils sont
-                bornés par<span> &lt;!-- </span>et<span> --&gt;</span>.
+                bornés par<span class=comment> &lt;!-- </span>et<span class=comment> --&gt;</span>.
                 Cela permet de gagner en lisibilité, même pour un fichier court. Exemple :
             </p>
             <pre class="html"><code>&lt;body&gt;
@@ -81,9 +82,9 @@ title: "Projet complexe"
                 clairement identifiées et identifiables, avec un rôle précis. La mise en page se fait toujours
                 en CSS. Exemples d’architecture d’une page longue :
             </p>
-            <ul><li>Exemple 1 - avec<span> &lt;aside&gt; </span>:</li></ul>
+            <ul><li>Exemple 1 - avec<span class=comment> &lt;aside&gt; </span>:</li></ul>
             <img src="{{ '/assets/complex-structure/example1.png' | relative_url }}" alt="Une représentation de l'architecture d'une page HTML.">
-            <ul><li>Exemple 2 -<span> &lt;nav&gt; </span>dans le<span> &lt;footer&gt; </span>:</li></ul>
+            <ul><li>Exemple 2 -<span class=comment> &lt;nav&gt; </span>dans le<span class=comment> &lt;footer&gt; </span>:</li></ul>
             <img src="{{ '/assets/complex-structure/example2.png' | relative_url }}" alt="Une représentation de l'architecture d'une page HTML.">
         </div>
 
@@ -105,15 +106,15 @@ title: "Projet complexe"
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
             <p>
-                Les éléments de navigation sont regroupés dans la balise<span> &lt;nav&gt;</span>,
-                sous forme de liens (<span>&lt;a&gt;</span>). La navigation doit être claire et identique
+                Les éléments de navigation sont regroupés dans la balise<span class=comment> &lt;nav&gt;</span>,
+                sous forme de liens (<span class=comment>&lt;a&gt;</span>). La navigation doit être claire et identique
                 sur toutes les pages du site. Par exemple&nbsp;:
             </p>
             <ul>
-                <li>Navigation principale :<span> &lt;nav&gt; </span>est placé dans le<span> &lt;header&gt; </span>(horizontale) ou dans un<span> &lt;aside&gt; </span>(latérale) ; on gère toujours la disposition des éléments via le CSS.</li>
-                <li>Navigation vers des liens externes ou navigation utilitaire : la balise<span> &lt;nav&gt; </span>est dans le<span> &lt;footer&gt;</span>.</li>
-                <li>Navigation au sein d’une même page longue : les liens ciblent des<span> id </span>(ex : un<span> id </span>par<span> &lt;section&gt;</span>).</li>
-                <li>Navigation hiérarchisée : pour des menus et sous-menus ; il peut y avoir plusieurs<span> &lt;nav&gt; </span>imbriqués.</li>
+                <li>Navigation principale :<span class=comment> &lt;nav&gt; </span>est placé dans le<span class=comment> &lt;header&gt; </span>(horizontale) ou dans un<span class=comment> &lt;aside&gt; </span>(latérale) ; on gère toujours la disposition des éléments via le CSS.</li>
+                <li>Navigation vers des liens externes ou navigation utilitaire : la balise<span class=comment> &lt;nav&gt; </span>est dans le<span class=comment> &lt;footer&gt;</span>.</li>
+                <li>Navigation au sein d’une même page longue : les liens ciblent des<span class=comment> id </span>(ex : un<span class=comment> id </span>par<span class=comment> &lt;section&gt;</span>).</li>
+                <li>Navigation hiérarchisée : pour des menus et sous-menus ; il peut y avoir plusieurs<span class=comment> &lt;nav&gt; </span>imbriqués.</li>
             </ul>
         </div>
 
@@ -135,13 +136,13 @@ title: "Projet complexe"
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
             <p>
-                <span>&lt;div&gt; </span>et <span> &lt;span&gt; </span>
+                <span class=comment>&lt;div&gt; </span>et<span class=comment> &lt;span&gt; </span>
                 sont des balises sans signification (on dit qu’elles sont "neutres"). Ils sont utilisés
                 quand aucune autre balise n’est pertinente ou lors de la mise en forme du site en CSS.
             </p>
             <ul>
-                <li><span>&lt;div&gt; </span>est affiché comme un élément bloc (sous l’élément qui le précède).</li>
-                <li><span>&lt;span&gt; </span>est affiché comme un élément inline (sur la même ligne que l’élément qui le précède).</li>
+                <li><span class=comment>&lt;div&gt; </span>est affiché comme un élément bloc (sous l’élément qui le précède).</li>
+                <li><span class=comment>&lt;span&gt; </span>est affiché comme un élément inline (sur la même ligne que l’élément qui le précède).</li>
             </ul>
             <pre class="html"><code>&lt;div&gt;
   &lt;div&gt;texte 1&lt;/div&gt;
@@ -176,7 +177,7 @@ title: "Projet complexe"
                 <li>Absence de titres dans une page longue.</li>
                 <li>Navigation placée n’importe où dans la page.</li>
                 <li>Dupliquer la navigation différemment sur chaque page.</li>
-                <li>Utiliser uniquement des<span> &lt;div&gt; </span>pour structurer toute la page.</li>
+                <li>Utiliser uniquement des<span class=comment> &lt;div&gt; </span>pour structurer toute la page.</li>
                 <li>Commentaires trop nombreux ou inutiles.</li>
             </ul>
         </div>
@@ -201,8 +202,6 @@ title: "Projet complexe"
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Lire et écrire du code : nettoyer et commenter le code suivant pour le rendre lisible.</h3>
@@ -216,8 +215,6 @@ title: "Projet complexe"
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>

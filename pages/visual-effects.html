@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Effets visuels"
+short: "Effets visuels"
+title: "Maîtriser les effets visuels"
 ---
 
 <!-- content section
@@ -11,7 +12,7 @@ title: "Effets visuels"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <p>Le pseudo-sélecteur<span> :active </span>s’applique lorsqu’un utilisateur clique sur un élément (clic maintenu).</p>
+            <p>Le pseudo-sélecteur<span class=comment> :active </span>s’applique lorsqu’un utilisateur clique sur un élément (clic maintenu).</p>
             <pre class="css"><code>a {
     color: black;
     text-decoration: none;
@@ -20,10 +21,10 @@ title: "Effets visuels"
 a:active {
     color: red;
 }</code></pre>
-            <p><span>:active </span>n’agit pas comme<span> :hover </span>:</p>
+            <p><span class=comment>:active </span>n’agit pas comme<span class=comment> :hover </span>:</p>
             <ul>
-                <li><span>:hover </span>: quand l’utilisateur survole l’élément, il voit que l’élément est interactif.</li>
-                <li><span>:active </span>: quand l’utilisateur clique sur l’élément, il voit que son action est prise en compte.</li>
+                <li><span class=comment>:hover </span>: quand l’utilisateur survole l’élément, il voit que l’élément est interactif.</li>
+                <li><span class=comment>:active </span>: quand l’utilisateur clique sur l’élément, il voit que son action est prise en compte.</li>
             </ul>
             <pre class="css"><code>a:hover {
     color: blue;
@@ -83,9 +84,9 @@ a:active {
             <ul>
                 <li>Effet trop visible ou trop agressif.</li>
                 <li>Multiplier les effets sans raison.</li>
-                <li>Différence trop faible entre l’état normal et<span> :active</span>.</li>
+                <li>Différence trop faible entre l’état normal et<span class=comment> :active</span>.</li>
                 <li>Modifier la taille ou la position d’un élément lors du clic.</li>
-                <li>Utiliser<span> :hover </span>et<span> :active </span>sur des éléments non interactifs.</li>
+                <li>Utiliser<span class=comment> :hover </span>et<span class=comment> :active </span>sur des éléments non interactifs.</li>
             </ul>
         </div>
     </div>
@@ -116,8 +117,6 @@ button:active {
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Lire et écrire du code : analyser le problème causé par ce code, puis proposer une amélioration.</h3>
@@ -136,8 +135,6 @@ a:active {
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>

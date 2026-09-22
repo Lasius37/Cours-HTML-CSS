@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Sélecteurs CSS intermédiaires"
+short: "Sélecteurs CSS intermédiaires"
+title: "Utiliser les sélecteurs CSS intermédiaires"
 ---
 
 <!-- content section
@@ -14,7 +15,7 @@ title: "Sélecteurs CSS intermédiaires"
             <p>
                 Un fichier CSS lisible est plus simple à comprendre et à corriger. Il évite aussi les doublons
                 et donc le risque d’erreurs difficiles à corriger. On regroupe les règles par thème et on
-                commente les grandes parties. On utilise<span> /* </span>et<span> */</span>.
+                commente les grandes parties. On utilise<span class=comment> /* </span>et<span class=comment> */</span>.
                 Les deux morceaux de code suivants affichent le même résultat.
             </p>
             <pre class="css"><code><span class="comment">/* ========================= Styles généraux ========================= */</span>
@@ -206,8 +207,6 @@ p.important {
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Lire et écrire du code : nettoyer le code suivant pour le rendre lisible.</h3>
@@ -222,8 +221,6 @@ p.important {
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Écrire du code : coder pour obtenir le rendu demandé, sans coder de HTML.</h3>
@@ -233,9 +230,9 @@ p.important {
                 <div class="layout__text">
                     <ul>
                         <li>Tous les titres des sections de couleur bleue.</li>
-                        <li>Les paragraphes encadrés en rouge dans la section<span> .article</span>,</li>
+                        <li>Les paragraphes encadrés en rouge dans la section<span class=comment> .article</span>,</li>
                         <li>Un CSS lisible et commenté,</li>
-                        <li>Le titre de la section de classe<span> .sous </span>centré.</li>
+                        <li>Le titre de la section de classe<span class=comment> .sous </span>centré.</li>
                     </ul>
                     <pre class="html"><code>&lt;section class="article"&gt;
     &lt;h2&gt;Titre&lt;/h2&gt;

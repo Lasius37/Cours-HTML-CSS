@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Cas particuliers de mise en forme"
+short: "Mise en forme : cas particuliers"
+title: "Maîtriser des cas particuliers de mise en forme"
 ---
 
 <!-- content section
@@ -12,19 +13,19 @@ title: "Cas particuliers de mise en forme"
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
             <ul>
-                <li>La propriété<span> border-radius </span>arrondit les coins d'un élément.
+                <li>La propriété<span class=comment> border-radius </span>arrondit les coins d'un élément.
                     <pre class="css"><code>section {
     border: 2px solid black;
     border-radius: 10px;
 }</code></pre>
                 </li>
-                <li>L’ombre (<span>box-shadow</span>) donne du relief à un élément. Syntaxe : décalage horizontal, décalage vertical, flou, couleur. Cela met en valeur une zone (carte, encadré…) avec un effet de volume.
+                <li>L’ombre (<span class=comment>box-shadow</span>) donne du relief à un élément. Syntaxe : décalage horizontal, décalage vertical, flou, couleur. Cela met en valeur une zone (carte, encadré…) avec un effet de volume.
                     <pre class="css"><code>section {
     border: 1px solid black;
     box-shadow: 4px 4px 8px gray;
 }</code></pre>
                 </li>
-                <li>On peut rendre une couleur partiellement transparente avec<span> rgba()</span>. Les trois premiers nombres = rouge, vert, bleu (0 à 255). Le dernier = transparence (0 à 1) (0 = transparent, 1 = opaque).
+                <li>On peut rendre une couleur partiellement transparente avec<span class=comment> rgba()</span>. Les trois premiers nombres = rouge, vert, bleu (0 à 255). Le dernier = transparence (0 à 1) (0 = transparent, 1 = opaque).
                     <pre class="css"><code>header {
     background-color: rgba(0, 0, 0, 0.2);
 }</code></pre>
@@ -49,7 +50,7 @@ title: "Cas particuliers de mise en forme"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <p>Il est possible de modifier les liens au survol de la souris avec<span> :hover</span>.</p>
+            <p>Il est possible de modifier les liens au survol de la souris avec<span class=comment> :hover</span>.</p>
             <pre class="css"><code>a {
     background-color: white;
 }
@@ -77,9 +78,9 @@ a:hover {
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
             <p>
-                Un tableau se code en HTML avec plusieurs éléments imbriqués :<span> &lt;table&gt; </span>
-                (le tableau),<span> &lt;tr&gt; </span>(une ligne),<span> &lt;th&gt; </span>
-                (une cellule d’en-tête),<span> &lt;td&gt; </span>(une cellule normale). Sa mise
+                Un tableau se code en HTML avec plusieurs éléments imbriqués :<span class=comment> &lt;table&gt; </span>
+                (le tableau),<span class=comment> &lt;tr&gt; </span>(une ligne),<span class=comment> &lt;th&gt; </span>
+                (une cellule d’en-tête),<span class=comment> &lt;td&gt; </span>(une cellule normale). Sa mise
                 en forme se fait en CSS.
             </p>
             <pre class="html"><code>&lt;table&gt;
@@ -92,7 +93,6 @@ a:hover {
         &lt;td&gt;17h - 20h&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-            <br>
             <pre class="css"><code>table {
     border-collapse: collapse;  <span class="comment">/* Évite d’avoir des doubles bordures */</span>
 }
@@ -123,8 +123,8 @@ th, td {
             <ul>
                 <li>Mettre des arrondis trop grands ou sur tous les éléments.</li>
                 <li>Utiliser des ombres trop fortes (page "chargée" et illisible).</li>
-                <li>Confondre<span> opacity </span>(qui rend un élément transparent) et<span> rgba() </span>(qui rend une couleur transparente).</li>
-                <li>Oublier<span> border-collapse </span>ou<span> padding </span>sur un tableau.</li>
+                <li>Confondre<span class=comment> opacity </span>(qui rend un élément transparent) et<span class=comment> rgba() </span>(qui rend une couleur transparente).</li>
+                <li>Oublier<span class=comment> border-collapse </span>ou<span class=comment> padding </span>sur un tableau.</li>
             </ul>
         </div>
     </div>
@@ -147,7 +147,6 @@ th, td {
     &lt;h2&gt;Titre&lt;/h2&gt;
     &lt;p&gt;Texte…&lt;/p&gt;
 &lt;/section&gt;</code></pre>
-                    <br>
                     <pre class="css"><code>.carte {
     border: 2px solid black;
     border-radius: 12px;
@@ -157,8 +156,6 @@ th, td {
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
@@ -175,8 +172,6 @@ th, td {
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>

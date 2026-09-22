@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Aide CSS"
+short: "Aide CSS"
+title: "CSS - Cheatsheet"
 ---
 
 
@@ -27,7 +28,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>type</td>
@@ -73,7 +74,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>largeur</td>
@@ -109,7 +110,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>marges extérieures</td>
@@ -148,7 +149,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>épaisseur</td>
@@ -197,7 +198,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>police</td>
@@ -254,7 +255,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>couleur</td>
@@ -306,7 +307,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>bordures</td>
@@ -332,7 +333,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>puces</td>
@@ -369,7 +370,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>couleur</td>
@@ -447,7 +448,7 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
                         <td>ombre (texte)</td>
@@ -487,176 +488,178 @@ title: "Aide CSS"
             <div class="cheatsheet">
                 <img src="{{ '/assets/cheatsheet-css/flexbox.png' | relative_url }}" alt="">
                 <p>Toutes ces propriétés portent sur le conteneur.</p>
-                <table>
-                    <tr>
-                        <td>initialisation</td>
-                        <td>
-                            <pre class="css"><code>display:</code></pre>
-                        </td>
-                        <td colspan="2">
-                            <pre class="css"><code>flex</code></pre>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>espacement</td>
-                        <td>
-                            <pre class="css"><code>gap:</code></pre>
-                        </td>
-                        <td colspan="2">valeur</td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/gap.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">retour à la ligne</td>
-                        <td rowspan="2">
-                            <pre class="css"><code>flex-wrap:</code></pre>
-                        </td>
-                        <td colspan="2">
-                            <pre class="css"><code>nowrap</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/flex-wrap-nowrap.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>wrap</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/flex-wrap-wrap.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">axe principal</td>
-                        <td rowspan="2">
-                            <pre class="css"><code>flex-direction:</code></pre>
-                        </td>
-                        <td colspan="2">
-                            <pre class="css"><code>row</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/flex-dir-row.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>column</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/flex-dir-col.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="7">distribution selon l'axe principal</td>
-                        <td rowspan="7">
-                            <pre class="css"><code>justify-content:</code></pre>
-                        </td>
-                        <td colspan="2">
-                            <pre class="css"><code>flex-start</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-flex-start.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>flex-end</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-flex-end.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>center</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-center.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>space-between</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-space-between.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>space-around</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-space-around.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>space-evenly</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-space-evenly.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <pre class="css"><code>stretch</code></pre>
-                        </td>
-                        <td>
-                            nécessite :
-                            <pre class="css"><code>.item {
-    flex: 1;
-}</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/justify-stretch.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">distribution selon l'axe secondaire</td>
-                        <td rowspan="4">
-                            <pre class="css"><code>align-items:</code></pre>
-                        </td>
-                        <td colspan="2">
-                            <pre class="css"><code>flex-start</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/align-flex-start.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>flex-end</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/align-flex-end.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <pre class="css"><code>center</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/align-center.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <pre class="css"><code>stretch</code></pre>
-                        </td>
-                        <td>
-                            nécessite :
-                            <pre class="css"><code>.item {
-    flex: 1;
-}</code></pre>
-                        </td>
-                        <td>
-                            <img src="{{ '/assets/cheatsheet-css/align-stretch.png' | relative_url }}" alt="">
-                        </td>
-                    </tr>
-                </table>
+                <div class="table-scroll">
+                    <table>
+                        <tr>
+                            <td>initialisation</td>
+                            <td>
+                                <pre class="css"><code>display:</code></pre>
+                            </td>
+                            <td colspan="2">
+                                <pre class="css"><code>flex</code></pre>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>espacement</td>
+                            <td>
+                                <pre class="css"><code>gap:</code></pre>
+                            </td>
+                            <td colspan="2">valeur</td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/gap.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">retour à la ligne</td>
+                            <td rowspan="2">
+                                <pre class="css"><code>flex-wrap:</code></pre>
+                            </td>
+                            <td colspan="2">
+                                <pre class="css"><code>nowrap</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/flex-wrap-nowrap.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>wrap</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/flex-wrap-wrap.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">axe principal</td>
+                            <td rowspan="2">
+                                <pre class="css"><code>flex-direction:</code></pre>
+                            </td>
+                            <td colspan="2">
+                                <pre class="css"><code>row</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/flex-dir-row.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>column</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/flex-dir-col.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">distribution selon l'axe principal</td>
+                            <td rowspan="7">
+                                <pre class="css"><code>justify-content:</code></pre>
+                            </td>
+                            <td colspan="2">
+                                <pre class="css"><code>flex-start</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-flex-start.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>flex-end</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-flex-end.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>center</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-center.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>space-between</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-space-between.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>space-around</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-space-around.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>space-evenly</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-space-evenly.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre class="css"><code>stretch</code></pre>
+                            </td>
+                            <td>
+                                nécessite :
+                                <pre class="css"><code>.item {
+        flex: 1;
+    }</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/justify-stretch.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">distribution selon l'axe secondaire</td>
+                            <td rowspan="4">
+                                <pre class="css"><code>align-items:</code></pre>
+                            </td>
+                            <td colspan="2">
+                                <pre class="css"><code>flex-start</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/align-flex-start.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>flex-end</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/align-flex-end.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre class="css"><code>center</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/align-center.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre class="css"><code>stretch</code></pre>
+                            </td>
+                            <td>
+                                nécessite :
+                                <pre class="css"><code>.item {
+        flex: 1;
+    }</code></pre>
+                            </td>
+                            <td>
+                                <img src="{{ '/assets/cheatsheet-css/align-stretch.png' | relative_url }}" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -670,10 +673,10 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
+            <div class="cheatsheet table-scroll">
                 <table>
                     <tr>
-                        <th></th>
+                        <th style="width: 2rem"></th>
                         <th>Hexadécimal</th>
                         <th>RGB</th>
                     </tr>
@@ -811,8 +814,8 @@ title: "Aide CSS"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <div class="cheatsheet">
-                <table class="cheatsheet">
+            <div class="cheatsheet table-scroll">
+                <table>
                     <tr>
                         <td>taille fixe</td>
                         <td>

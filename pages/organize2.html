@@ -1,5 +1,6 @@
 ---
 layout: base
+short: "Projet complet"
 title: "Organiser un projet complet"
 ---
 
@@ -13,65 +14,69 @@ title: "Organiser un projet complet"
         <div class="layout__text">
             <img src="{{ '/assets/organize2/folders.png' | relative_url }}" alt="capture d'écran de l'arborescence d'un petit site.">
             <ul>
-                <li>Pour<span> index.html </span>:
-                    <table>
-                        <tr>
-                            <td>appel :<span> style.css</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;link rel="stylesheet" href="./css/style.css"&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>insertion : image</td>
-                            <td>
-                                <pre class="html"><code>&lt;img src="./images/photo-1.png"&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>lien :<span> page-1.html</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;a href="./pages/page-1.html"&gt;Mon lien&lt;/a&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>lien :<span> page-2.html</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;a href="./pages/page-2.html"&gt;Mon lien&lt;/a&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
+                <li>Pour<span class=comment> index.html </span>:
+                    <div class="table-scroll">
+                        <table>
+                            <tr>
+                                <td>appel :<span class=comment> style.css</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;link rel="stylesheet" href="./css/style.css"&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>insertion : image</td>
+                                <td>
+                                    <pre class="html"><code>&lt;img src="./images/photo-1.png"&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>lien :<span class=comment> page-1.html</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;a href="./pages/page-1.html"&gt;Mon lien&lt;/a&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>lien :<span class=comment> page-2.html</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;a href="./pages/page-2.html"&gt;Mon lien&lt;/a&gt;</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
-                <li>Pour<span> page-1.html </span>:
-                    <table>
-                        <tr>
-                            <td>appel :<span> style.css</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;link rel="stylesheet" href="../css/style.css"&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>insertion : image</td>
-                            <td>
-                                <pre class="html"><code>&lt;img src="../images/photo-1.png"&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>lien :<span> index.html</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;a href="../index.html"&gt;Mon lien&lt;/a&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>lien :<span> page-2.html</span></td>
-                            <td>
-                                <pre class="html"><code>&lt;a href="./page-2.html"&gt;Mon lien&lt;/a&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
+                <li>Pour<span class=comment> page-1.html </span>:
+                    <div class="table-scroll">
+                        <table>
+                            <tr>
+                                <td>appel :<span class=comment> style.css</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;link rel="stylesheet" href="../css/style.css"&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>insertion : image</td>
+                                <td>
+                                    <pre class="html"><code>&lt;img src="../images/photo-1.png"&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>lien :<span class=comment> index.html</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;a href="../index.html"&gt;Mon lien&lt;/a&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>lien :<span class=comment> page-2.html</span></td>
+                                <td>
+                                    <pre class="html"><code>&lt;a href="./page-2.html"&gt;Mon lien&lt;/a&gt;</code></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
                 <li>Le chemin des liens est toujours indiqué par rapport au fichier lui-même.</li>
-                <li>Dans le parcours de l’arborescence,<span> ./ </span>indique le chemin du dossier dans lequel est le fichier.</li>
-                <li>Dans les chemins de fichiers,<span> ../ </span>permet de remonter un niveau dans l’arborescence.</li>
+                <li>Dans le parcours de l’arborescence,<span class=comment> ./ </span>indique le chemin du dossier dans lequel est le fichier.</li>
+                <li>Dans les chemins de fichiers,<span class=comment> ../ </span>permet de remonter un niveau dans l’arborescence.</li>
             </ul>
         </div>
 
@@ -95,12 +100,12 @@ title: "Organiser un projet complet"
             <p>
                 Les noms doivent être les plus explicites possibles, autant pour les dossiers, les fichiers et
                 les classes. Il existe quelques conventions de nommage : minuscules, sans espace, sans accent
-                et sans caractère spéciaux ; on sépare les mots avec "<span>-</span>" (kebab-case). Les chiffres sont
+                et sans caractère spéciaux ; on sépare les mots avec "<span class=comment>-</span>" (kebab-case). Les chiffres sont
                 possibles, mais jamais au début.
             </p>
             <ul>
-                <li>Le nom d’un dossier doit correspondre aux fichiers qu’il contient (ex :<span> images</span>,<span> video</span>, ...).</li>
-                <li>Le nom d’un fichier doit être cohérent avec son contenu (exception :<span> index.html</span>, obligatoire et réservé pour l’accueil).</li>
+                <li>Le nom d’un dossier doit correspondre aux fichiers qu’il contient (ex :<span class=comment> images</span>,<span class=comment> video</span>, ...).</li>
+                <li>Le nom d’un fichier doit être cohérent avec son contenu (exception :<span class=comment> index.html</span>, obligatoire et réservé pour l’accueil).</li>
                 <li>Le nom d’une classe doit explicitement exprimer le rôle des éléments appartenant à cette classe. La classe des sous éléments dérive du nom de la classe du bloc parent.</li>
             </ul>
             <pre class="html"><code>&lt;nav class="navbar"&gt;
@@ -129,7 +134,7 @@ title: "Organiser un projet complet"
             <ul>
                 <li>Mettre tous les fichiers dans le même dossier.</li>
                 <li>Nommer les dossiers ou les fichiers avec des caractères spéciaux, espace, majuscules.</li>
-                <li>Changer de norme de nommage (<span>contact.html </span>et<span> Histoire.html </span>dans le même projet).</li>
+                <li>Changer de norme de nommage (<span class=comment>contact.html </span>et<span class=comment> Histoire.html </span>dans le même projet).</li>
                 <li>Laisser des liens "cassés".</li>
                 <li>Utiliser des noms vagues.</li>
             </ul>
@@ -154,8 +159,6 @@ title: "Organiser un projet complet"
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
@@ -189,8 +192,6 @@ title: "Organiser un projet complet"
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Écrire du code : coder pour obtenir le rendu demandé.</h3>
@@ -204,7 +205,7 @@ title: "Organiser un projet complet"
                                 <li>une page d’accueil,</li>
                                 <li>une page "services",</li>
                                 <li>une page "contacts",</li>
-                                <li>un fichier<span> style.css</span>,</li>
+                                <li>un fichier<span class=comment> style.css</span>,</li>
                                 <li>plusieurs images.</li>
                             </ul>
                         </li>

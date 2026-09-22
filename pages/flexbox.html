@@ -1,6 +1,7 @@
 ---
 layout: base
-title: "Flexbox"
+short: "Flexbox"
+title: "Utiliser les Flexbox"
 ---
 
 <!-- content section
@@ -11,10 +12,10 @@ title: "Flexbox"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <p>Le modèle<span> Flexbox </span>permet d’organiser facilement des éléments en ligne
-                ou en colonne, et de gérer leur alignement et leur espacement.<span> Flexbox </span>
+            <p>Le modèle<span class=comment> Flexbox </span>permet d’organiser facilement des éléments en ligne
+                ou en colonne, et de gérer leur alignement et leur espacement.<span class=comment> Flexbox </span>
                 agit sur un conteneur et sur les éléments qu’il contient. Tous les éléments à l’intérieur du
-                conteneur (ici, les éléments de classe<span> .item</span>) deviennent des éléments
+                conteneur (ici, les éléments de classe<span class=comment> .item</span>) deviennent des éléments
                 flexibles.
             </p>
             <pre class="html"><code>&lt;div class="conteneur"&gt;
@@ -46,7 +47,7 @@ title: "Flexbox"
 
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
-            <p>Il y a plusieurs propriétés associées au modèle<span> Flexbox</span>.</p>
+            <p>Il y a plusieurs propriétés associées au modèle<span class=comment> Flexbox</span>.</p>
             <pre class="css"><code>.conteneur {
     display: flex;  <span class="comment">/* déclaration du Flexbox */</span>
     flex-wrap: wrap;  <span class="comment">/* retour à la ligne */</span>
@@ -76,10 +77,10 @@ title: "Flexbox"
         <!-- layout element -------------------------------------------------------------------------------- -->
         <div class="layout__text">
             <ul>
-                <li>Oublier<span> display: flex </span>sur le conteneur.</li>
-                <li>Appliquer les propriétés<span> Flexbox </span>aux éléments enfants au lieu du conteneur.</li>
-                <li>Mélanger<span> justify-content </span>et<span> align-items</span>.</li>
-                <li>Utiliser<span> Flexbox </span>pour tout, même quand une mise en page simple suffit.</li>
+                <li>Oublier<span class=comment> display: flex </span>sur le conteneur.</li>
+                <li>Appliquer les propriétés<span class=comment> Flexbox </span>aux éléments enfants au lieu du conteneur.</li>
+                <li>Mélanger<span class=comment> justify-content </span>et<span class=comment> align-items</span>.</li>
+                <li>Utiliser<span class=comment> Flexbox </span>pour tout, même quand une mise en page simple suffit.</li>
                 <li>Ne pas tester le rendu avec plusieurs éléments.</li>
             </ul>
         </div>
@@ -114,8 +115,6 @@ title: "Flexbox"
             </div>
         </li>
 
-        <div class="separator"></div>
-
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
             <h3>Lire et écrire du code : corriger le code pour obtenir le rendu demandé.</h3>
@@ -137,8 +136,6 @@ title: "Flexbox"
                 </div>
             </div>
         </li>
-
-        <div class="separator"></div>
 
         <!-- exercise -------------------------------------------------------------------------------------- -->
         <li>
